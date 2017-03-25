@@ -25,13 +25,7 @@ class GroupsController < ApplicationController
     else
       render :new
     end
-  end
-
-    if @group.save
-      redirect_to groups_path
-    else
-      render :new
-    end
+  
   end
 
   def update
