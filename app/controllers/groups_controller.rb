@@ -42,10 +42,6 @@ class GroupsController < ApplicationController
     redirect_to groups_path, alert: "Group deleted"
   end
 
-    @group.destroy
-    redirect_to groups_path, alert: "Group deleted"
-  end
-
   private
 
   def find_group_and_check_permission
